@@ -3,20 +3,25 @@
 
 {% block body %}
 	<frame src="index.php?p=menu">
-	<frame src="index.php?p=home" name="contents">
-	<li>Apple</li>
-	<li>Strawberry</li>
+	<frame src="index.php?p=home" name="contents" title="Main contents">
+
+	<ol>
+  		<li>Apple</li>
+		</ol>
+	<ol>
+  		<li>Strawberry</li>
+	</ol>
 	<table border="1">
 		<caption>Contact Information</caption>
 		<tr>
 			<td></td>
-			<th>Name</th>
+			<th scope="col">Name</th>
 			<th>Phone#</th>
-			<th>City</th>
+			<th scope="col">City</th>
 		</tr>
 		<tr>
 			<td>1.</td>
-			<th>Joel Garner</th>
+			<th scope="col">Joel Garner</th>
 			<td>412-212-5421</td>
 			<td>Pittsburgh</td>
 		</tr>
