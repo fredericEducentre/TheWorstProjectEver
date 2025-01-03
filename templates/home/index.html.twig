@@ -2,8 +2,8 @@
 
 
 {% block body %}
-	<frame src="index.php?p=menu">
-	<frame src="index.php?p=home" name="contents" title="Main contents">
+	<iframe src="index.php?p=menu">
+	<iframe src="index.php?p=home" name="contents" title="Main contents">
 
 	<ol>
   		<li>Apple</li>
@@ -16,7 +16,7 @@
 		<tr>
 			<td></td>
 			<th scope="col">Name</th>
-			<th>Phone#</th>
+			<th scope="col">Phone#</th>
 			<th scope="col">City</th>
 		</tr>
 		<tr>
@@ -38,6 +38,8 @@
 		<img src="https://placehold.co/400" alt="test"/>
 		<video id="video" controls preload="metadata" alt="test">
 			<source src="https://cdn.pixabay.com/video/2024/11/09/240531_large.mp4" type="video/mp4">
+			<track src="subtitles-en" kind="subtitles" srclang="en" label="English">
+			<track src="description" kind="descriptions" srclang="en" label="Audio Description">
 		</video>
 		<script>
 			{{ include('home/index.js') }}
