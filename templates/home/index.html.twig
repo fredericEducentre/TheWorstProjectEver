@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+	<frame src="index.php?p=menu">
+	<frame src="index.php?p=home" name="contents">
+	<li>Apple</li>
+	<li>Strawberry</li>
+	<table border="1">
+		<caption>Contact Information</caption>
+		<tr>
+			<td></td>
+			<th>Name</th>
+			<th>Phone#</th>
+			<th>City</th>
+		</tr>
+		<tr>
+			<td>1.</td>
+			<th>Joel Garner</th>
+			<td>412-212-5421</td>
+			<td>Pittsburgh</td>
+		</tr>
+		<tr>
+			<td>2.</td>
+			<th>Clive Lloyd</th>
+			<td>410-306-1420</td>
+			<td>Baltimore</td>
+		</tr>
+	</table>
+{% endblock %}
